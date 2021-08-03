@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Intro to Web development</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- This is a contact tracing form for covid-19. Hope this helps.
+-->
+
+
+<h2 id="Heading" style= "color:rgb(0, 0, 0); text-align:center;"> Contact Tracing COVID-19</h2>
+
+<div>
+	<form>
+
+	<label for="date"><b>Date<span style="color: red"> * </span></b></label><br>
+	<input type="date" id="date"  style="width:10%" >
+	<span class="error_form" id="date_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="fname"><b>First Name<span style="color: red"> * </span></b></label><br>
+	<input type="text" id="fname" name=""  placeholder="Enter your first name..." style="width:50%" >
+	<span class="error_form" id="fname_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="lname"><b>Last Name</b></label><br>
+	<input type="text" id="lname" name="" placeholder="Enter your last name..." style="width:50%" >
+	<span class="error_form" id="lname_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="fname"><b>Gender:</b></label><br>
+	<input type="radio" name="gender" value="male" checked> Male
+	<input type="radio" name="gender" value="female"> Female
+	<input type="radio" name="gender" value="other"> Other<br><br>
+	
+	<label  for="email"><b>Email <span style="color: red"> * </span></b></label><br>
+	<input type="text" id="email" name="" placeholder="Enter your email address..." style="width:50%" >
+	<span class="error_form" id="email_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="mobile"><b>Mobile No.<span style="color: red"> * </span></b></label><br>
+	<input type="text" id="mobile" name="" placeholder="Enter mobile no. ..." style="width:50%">
+	<span class="error_form" id="mobile_error_message" style="color:tomato; width=50%"></span><br>
+	
+	
+	<label for="address"><b>Address<span style="color: red"> * </span></b></label><br>
+	<input type="text" id="address" name="" placeholder="Enter address..." style="width:50%">
+	<span class="error_form" id="address_error_message" style="color:tomato; width=50%"></span><br>
+	
+	
+	<input type="button" ondblclick="resetDet()" value="RESET" style="width:50%" ></button> 
+	<input type="button" id="subUpd" onclick="myFunction()" value="SUBMIT / UPDATE"  style="width:50%"></button>
+	
+	<br><br>
+	<label for="trace"><b>Contact Tracing</b></label><br>
+	
+	<table id="empTab" style= "width:100%; border-spacing:5 px;  ">
+	<tr>
+		<th>No.</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Mobile</th>
+		<th>Address</th>
+		<th>Date</th>
+		<th>Update</th>
+		<th>Delete</th>
+	</tr>
+	
+	</table>
+	
+	
+
+	
+	</form>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/script.js"></script>
+
+</html>
